@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HyperJob - Vacancies</title>
+</head>
+<body>
+    <h2>HyperJob Vacancies!</h2>
+    {% for vacancy in vacancies %}
+        <div>
+            <div>{{ vacancy.author }}: {{ vacancy.description }}</div>
+        </div>
+    {% endfor %}
+</body>
+</html>
